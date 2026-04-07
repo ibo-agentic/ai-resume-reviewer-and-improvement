@@ -41,3 +41,39 @@ pip install groq gradio python-dotenv PyPDF2
 **3. Add your Groq API key**
 
 Create a `.env` file in the root folder:
+
+GROQ_API_KEY=your_key_here
+
+Get a free API key at [console.groq.com](https://console.groq.com)
+
+**4. Run the app**
+```bash
+python app.py
+```
+
+Open `http://127.0.0.1:7860` in your browser.
+
+---
+
+## How to use
+
+1. Upload your resume as a PDF or paste the text
+2. Enter the job role you are applying for (e.g. "Data Scientist")
+3. Click **Analyze & Improve My Resume**
+4. Read the feedback cards on the right
+5. Use the follow-up box to ask further questions
+
+---
+
+## Features
+
+- **Two AI tools** chained together — analysis output is passed as context to the improvement tool
+- **Conversation memory** — remembers last 10 turns for follow-up questions
+- **Clean UI** — results displayed as colored cards, raw text available for copying
+- **PDF support** — extracts text automatically from uploaded PDFs
+
+---
+
+## Author
+
+**Ibo** — [@ibo-agentic](https://github.com/ibo-agentic)
